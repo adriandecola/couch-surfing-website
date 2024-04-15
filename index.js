@@ -20,7 +20,7 @@ var reviews = [
     },
 ];
 // Function do display total number of reviews
-function showReviewTotal(reviewTotal) {
-    reviewTotalDisplay.innerHTML = "Total Number of Reviews: " + reviewTotal.toString();
+function showReviewTotal(reviewTotal, lastReviewer) {
+    reviewTotalDisplay.innerHTML = "Total Number of Reviews: " + reviewTotal.toString() + " | Last Reviewer: " + lastReviewer;
 }
-showReviewTotal(reviews.length);
+showReviewTotal(reviews.length, "Andrzej");
