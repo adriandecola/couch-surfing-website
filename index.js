@@ -23,7 +23,9 @@ var reviews = [
 ];
 // Function do display total number of reviews
 function showReviewTotal(reviewTotal, lastReviewer, loyaltyUser) {
-    reviewTotalDisplay.innerHTML = "Total Number of Reviews: " + reviewTotal.toString() + " | Last Reviewer: " + lastReviewer + (loyaltyUser ? '⭐' : '');
+    if (reviewTotalDisplay) {
+        reviewTotalDisplay.innerHTML = "Total Number of Reviews: " + reviewTotal.toString() + " | Last Reviewer: " + lastReviewer + (loyaltyUser ? '⭐' : '');
+    }
 }
 showReviewTotal(reviews.length, "Andrzej", true);
 var you = {
@@ -31,9 +33,10 @@ var you = {
     isReturning: true,
 };
 function populateUser(isReturning, userName) {
-    if (isReturning) {
+    if (isReturning && returningUserDisplay) {
         returningUserDisplay.innerHTML = 'back';
     }
-    userNameDisplay.innerHTML = userName;
+    if (userNameDisplay)
+        userNameDisplay.innerHTML = userName;
 }
 populateUser(you.isReturning, you.userName);
