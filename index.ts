@@ -22,8 +22,8 @@ const reviews = [
 ]
 
 // Function do display total number of reviews
-function showReviewTotal (reviewTotal: number, lastReviewer: string) {
-	reviewTotalDisplay.innerHTML = "Total Number of Reviews: " + reviewTotal.toString() + " | Last Reviewer: " + lastReviewer;
+function showReviewTotal (reviewTotal: number, lastReviewer: string, loyaltyUser: boolean) {
+	reviewTotalDisplay.innerHTML = "Total Number of Reviews: " + reviewTotal.toString() + " | Last Reviewer: " + lastReviewer + (loyaltyUser ? '⭐' : '');
 }
 
-showReviewTotal(reviews.length, "Andrzej");
+showReviewTotal(reviews.length, "Andrzej", true);
