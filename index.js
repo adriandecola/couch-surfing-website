@@ -1,6 +1,5 @@
-const reviewTotalDisplay = document.querySelector('#reviews')
-
-const reviews = [
+var reviewTotalDisplay = document.querySelector('#reviews');
+var reviews = [
     {
         name: 'Sheia',
         stars: 5,
@@ -19,11 +18,9 @@ const reviews = [
         loyaltyUser: true,
         date: '27-03-2021'
     },
-]
-
+];
 // Function do display total number of reviews
-function showReviewTotal (reviewTotal: number) {
-	reviewTotalDisplay.innerHTML = "Total Number of Reviews: " + reviewTotal.toString();
+function showReviewTotal(reviewTotal) {
+    reviewTotalDisplay.innerHTML = "Total Number of Reviews: " + reviewTotal.toString();
 }
-
 showReviewTotal(reviews.length);
