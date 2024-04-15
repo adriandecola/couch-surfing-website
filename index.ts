@@ -1,4 +1,6 @@
 const reviewTotalDisplay = document.querySelector('#reviews')
+const returningUserDisplay = document.querySelector('#returning-user')
+const userNameDisplay = document.querySelector('#user')
 
 const reviews = [
     {
@@ -27,3 +29,18 @@ function showReviewTotal (reviewTotal: number, lastReviewer: string, loyaltyUser
 }
 
 showReviewTotal(reviews.length, "Andrzej", true);
+
+const you = {
+    userName: 'Bobby',
+    isReturning: true,
+}
+
+
+function populateUser(isReturning : boolean, userName : string ) {
+    if (isReturning){
+        returningUserDisplay.innerHTML = 'back'
+    }
+    userNameDisplay.innerHTML = userName
+}
+
+populateUser(you.isReturning, you.userName)
