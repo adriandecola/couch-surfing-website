@@ -31,8 +31,8 @@ const reviews = [
     },
 ];
 const you = {
-    firstName: 'Bobby',
-    lastName: 'Brown',
+    firstName: 'Elena',
+    lastName: 'Glizzard',
     permissions: Permissions.ADMIN,
     isReturning: true,
     age: 35,
