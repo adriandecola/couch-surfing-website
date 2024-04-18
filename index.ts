@@ -1,6 +1,3 @@
-// Wrapping up our Dashboard
-// 1. Create All the other interfaces you think are needed for this board
-// 2. Using the Class, visually show the main Image above the review button.
 import {
 	showReviewTotal,
 	populateUser,
@@ -9,6 +6,7 @@ import {
 } from './utils';
 import { Permissions, LoyaltyUser } from './enums';
 import { Review, Property } from './interfaces';
+import MainProperty from './classes';
 const propertyContainer = document.querySelector('.properties');
 const reviewContainer = document.querySelector('.reviews');
 const container = document.querySelector('.container');
@@ -134,17 +132,6 @@ if (footer) {
 		' ' +
 		currentLocation[2] +
 		'°';
-}
-// Classes
-class MainProperty {
-	src: string;
-	title: string;
-	reviews: Review[];
-	constructor(src: string, title: string, reviews: Review[]) {
-		this.src = src;
-		this.title = title;
-		this.reviews = reviews;
-	}
 }
 
 let yourMainProperty = new MainProperty(
