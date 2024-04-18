@@ -20,32 +20,32 @@ let isLoggedIn: boolean;
 
 // Reviews
 const reviews: Review[] = [
-    {
-        name: 'Sheila',
-        stars: 5,
-        loyaltyUser: LoyaltyUser.GOLD_USER,
-        date: '01-04-2021',
-    },
-    {
-        name: 'Andrzej',
-        stars: 3,
-        loyaltyUser: LoyaltyUser.BRONZE_USER,
-        date: '28-03-2021',
-    },
-    {
-        name: 'Omar',
-        stars: 4,
-        loyaltyUser: LoyaltyUser.SILVER_USER,
-        date: '27-03-2021',
-    },
+	{
+		name: 'Sheila',
+		stars: 5,
+		loyaltyUser: LoyaltyUser.GOLD_USER,
+		date: '01-04-2021',
+	},
+	{
+		name: 'Andrzej',
+		stars: 3,
+		loyaltyUser: LoyaltyUser.BRONZE_USER,
+		date: '28-03-2021',
+	},
+	{
+		name: 'Omar',
+		stars: 4,
+		loyaltyUser: LoyaltyUser.SILVER_USER,
+		date: '27-03-2021',
+	},
 ];
 
 const you = {
-    firstName: 'Bobby',
-lastName: 'Brown',
+	firstName: 'Bobby',
+	lastName: 'Brown',
 	permissions: Permissions.ADMIN,
-    isReturning: true,
-age: 35,
+	isReturning: true,
+	age: 35,
 	stayedAt: ['florida-home', 'oman-flat', 'tokyo-bungalow'],
 };
 
@@ -66,7 +66,7 @@ interface Property {
 // Array of Properties
 const properties: Property[] = [
 	{
-		image: 'images/colombia-property.jpg',
+		image: 'images/colombia-property.jpeg',
 		title: 'Colombian Shack',
 		price: 45,
 		location: {
@@ -79,7 +79,7 @@ const properties: Property[] = [
 		isAvailable: true,
 	},
 	{
-		image: 'images/poland-property.jpg',
+		image: 'images/poland-property.jpeg',
 		title: 'Polish Cottage',
 		price: 30,
 		location: {
@@ -92,7 +92,7 @@ const properties: Property[] = [
 		isAvailable: false,
 	},
 	{
-		image: 'images/london-property.jpg',
+		image: 'images/london-property.jpeg',
 		title: 'London Flat',
 		price: 25,
 		location: {
@@ -150,7 +150,6 @@ if (footer) {
 		currentLocation[2] +
 		'°';
 }
-
 // Classes
 class MainProperty {
 	src: string;
@@ -164,7 +163,7 @@ class MainProperty {
 }
 
 let yourMainProperty = new MainProperty(
-	'images/italian-property.jpg',
+	'images/italian-property.jpeg',
 	'Italian House',
 	[
 		{
