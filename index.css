@@ -11,7 +11,7 @@ body {
 	padding: 0;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
 		'Lucida Sans', Arial;
-	color: darkgrey;
+	color: rgb(169, 169, 169);
 	flex-direction: column;
 }
 
@@ -27,7 +27,7 @@ body {
 	width: 100%;
 	position: sticky;
 	top: 0;
-	background-color: white;
+	background-color: rgb(255, 255, 255);
 	box-shadow: rgba(53, 49, 49, 0.12) 0 1px 8px;
 	display: flex;
 	justify-content: space-between;
@@ -61,10 +61,10 @@ body {
 
 .footer {
 	width: 100%;
-	background-color: lightcoral;
+	background-color: rgb(240, 128, 128);
 	text-align: center;
 	padding: 30px 0px;
-	color: white;
+	color: rgb(255, 255, 255);
 }
 
 .review-card {
@@ -79,7 +79,7 @@ body {
 .break {
 	height: 1px;
 	width: 90%;
-	background-color: coral;
+	background-color: rgb(255, 127, 80);
 }
 
 .card img {
@@ -89,7 +89,7 @@ body {
 }
 
 button {
-	background-color: green;
+	background-color: rgb(0, 128, 0);
 	color: white;
 	border-radius: 5px;
 	border: none;
@@ -97,5 +97,5 @@ button {
 }
 
 button:hover {
-	background-color: darkgoldenrod;
+	background-color: rgb(218, 165, 32);
 }
